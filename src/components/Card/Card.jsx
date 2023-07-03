@@ -1,7 +1,17 @@
 export default function Card({ card, onCardClick }) {
+
+  const handleImageOpenClick = () => onCardClick({
+    link: card.link,
+    name: card.name
+  });
+
   return (
     <li className="element">
-      <img className="element__img" src={card.link} alt={card.name} onClick={() => onCardClick({link: card.link, name: card.name})} />
+      <img
+        className="element__img"
+        src={card.link}
+        alt={card.name}
+        onClick={handleImageOpenClick} />
       <div className="element__info">
         <h2 className="element__name">{card.name}</h2>
         <div className="element__box">

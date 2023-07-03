@@ -17,6 +17,9 @@ export default function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardCl
         dataCards.forEach(data => data.myId = dataUser._id)
         setCards(dataCards)
     })
+    .catch((err) => {
+      console.log(err);
+    })
   }, []);
 
   return (
