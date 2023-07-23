@@ -13,7 +13,7 @@ class Api {
     };
 
     // Обновление аватара пользователя
-    changeAvatar(data) {
+    setUserAvatar(data) {
         return fetch(`${this._url}/users/me/avatar`, {
             method: 'PATCH',
             headers: this._headers,
@@ -81,7 +81,7 @@ class Api {
         .then(this._getResponseData)
     };
 
-    // Постановка и снятие лайка
+    // Установка и снятие лайка
     addLike(cardId) {
         return fetch(`${this._url}/cards/${cardId}/likes`, {
             method: 'PUT',

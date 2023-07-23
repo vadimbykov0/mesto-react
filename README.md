@@ -18,3 +18,4 @@
 
 ### Чеклист:
 * [Чеклист 10 спринта курса](https://code.s3.yandex.net/web-developer/checklists-pdf/new-program/checklist-10.pdf)
+* [Чеклист 11 спринта курса](https://code.s3.yandex.net/web-developer/checklists-pdf/new-program/checklist-11.pdf)
